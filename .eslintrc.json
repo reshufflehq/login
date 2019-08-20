@@ -1,13 +1,13 @@
 {
-    "extends": [
-      "react-app"
+  "extends": ["react-app"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-unused-expressions": [
+      "warn",
+      {
+        "allowShortCircuit": false
+      }
     ],
-    "rules": {
-      "no-unused-expressions": [
-        "warn",
-        {
-          "allowShortCircuit": false
-        }
-      ]
-    }
+    "prettier/prettier": "warning"
+  }
 }

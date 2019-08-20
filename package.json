@@ -12,11 +12,10 @@
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.0.0",
     "jsonwebtoken": "^8.5.1",
-    "jwt-decode": "^2.2.0",
-    "react-bootstrap": "^1.0.0-beta.11",
-    "react-router-dom": "^5.0.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.11",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
@@ -24,7 +23,9 @@
     "build": "cross-env EXTEND_ESLINT=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint backend && stylelint src/**/*.css"
+    "lint": "eslint backend && stylelint src/**/*.css",
+    "prettier-format": "prettier --config .prettierrc.json --write src/**/*.js backend/**/*.js",
+    "prettier-check": "prettier --config .prettierrc.json --check src/**/*.js backend/**/*.js"
   },
   "browserslist": {
     "production": [
@@ -41,6 +42,8 @@
   "devDependencies": {
     "cross-env": "^5.2.0",
     "cypress": "^3.4.1",
+    "eslint-plugin-prettier": "3.1.0",
+    "prettier": "1.18.2",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0"
   },
