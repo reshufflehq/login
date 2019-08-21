@@ -29,6 +29,7 @@
     "@binaris/shift-local-proxy": "0.0.11",
     "@binaris/shift-server-function": "0.0.1",
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.3.1",
     "dotenv": "^8.0.0",
     "jsonwebtoken": "^8.5.1",
     "react": "^16.8.6",
